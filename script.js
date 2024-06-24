@@ -23,9 +23,9 @@ async function searchimage(){
         const image=document.createElement("img");
         image.src=result.urls.small;
         const imagelink=document.createElement("a");
-        imagelink.href=result.links.html;
+        // imagelink.href=result.links.html;
+        imagelink.href=image.src;
         imagelink.target="_blank";
-
         imagelink.appendChild(image);
         search_result.appendChild(imagelink);
     })
